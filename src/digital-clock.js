@@ -5,7 +5,7 @@
 // const exampleDate = new Date()
 
 const today = new Date()
-const time = today.getHours() + ":" + today.getMinutes()
+const time = today.getHours() + " : " + today.getMinutes() + " : " + today.getSeconds()
 
 
 function displayDate() {
@@ -19,7 +19,6 @@ function displayDate() {
     const getDiv = document.querySelector(".date")
 
     getDiv.append(displayDate)
-
 }
 
 displayDate()
@@ -28,7 +27,6 @@ function displayTime() {
     toRegularTime = (militaryTime) => {
         const [hours, minutes, seconds] = militaryTime.split(':');
         return `${(hours > 12) ? hours - 12 : hours}:${minutes}${seconds ? `:${seconds}` : ''} ${(hours >= 12) ? 'PM' : 'AM'}`;
-
     }
 
     const displayTime = document.createElement("h3")
@@ -40,6 +38,5 @@ function displayTime() {
     getDiv.append(displayTime)
 
 }
-
 
 displayTime(time)
