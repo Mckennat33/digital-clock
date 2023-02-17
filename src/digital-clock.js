@@ -40,3 +40,6 @@ function displayTime() {
 }
 
 displayTime(time)
+
+
+console.log("Hello, my name is Thomas's Thinkpad.")
